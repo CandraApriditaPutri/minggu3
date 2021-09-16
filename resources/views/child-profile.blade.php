@@ -33,10 +33,11 @@
           <img src="template/img/light.png" alt="Light" class="light light-3">  
         </div>        
         <div class="row tm-welcome-content">
-          <h2 class="white-text tm-handwriting-font tm-welcome-header"><img src="template/img/header-line.png" alt="Line" class="tm-header-line">&nbsp;Profile&nbsp;&nbsp;<img src="template/img/header-line.png" alt="Line" class="tm-header-line"></h2>
+          <h2 class="white-text tm-handwriting-font tm-welcome-header"><img src="template/img/header-line.png" alt="Line" class="tm-header-line">&nbsp;Profile Owner&nbsp;&nbsp;<img src="template/img/header-line.png" alt="Line" class="tm-header-line"></h2>
           <h2 class="gold-text tm-welcome-header-2">Cafe House</h2>
-          <p class="gray-text tm-welcome-description">Cafe House is free <span class="gold-text">responsive Bootstrap</span> v3.3.5 layout by <span class="gold-text">templatemo</span>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-          <a href="#main" class="tm-more-button tm-more-button-welcome">Message Us</a>      
+          <p class="gray-text tm-welcome-description">Our owner name is <span class="gold-text">CANDRA APRIDITA PUTRI.</span> She was Born in Bojonegoro, 14 April 2002. Her current age is 19 years old. Now, studying at the Malang State Polytechnic. Department of Information Technology D3 Informatics Management study program.
+          After graduating, hopefully our owner can further develop this cafe business, and open branches in big cities..</p>
+          <a href="#main" class="tm-more-button tm-more-button-welcome">Message Now</a>      
         </div>
         <img src="template/img/table-set.png" alt="Table Set" class="tm-table-set img-responsive">            
       </div>      
@@ -44,7 +45,7 @@
     <div class="tm-main-section light-gray-bg">
       <div class="container" id="main">
         <section class="tm-section row">
-          <h2 class="col-lg-12 margin-bottom-30">Send us a message</h2>
+          <h2 class="col-lg-12 margin-bottom-30">Send our owner a message to provide suggestions, so that the cafe service is even better.</h2>
           <form action="#" method="post" class="tm-contact-form">
             <div class="col-lg-6 col-md-6">
               <div class="form-group">
@@ -63,49 +64,8 @@
                 <button class="tm-more-button" type="submit" name="submit">Send message</button> 
               </div>               
             </div>
-            <div class="col-lg-6 col-md-6">
-              <div id="google-map"></div>
-            </div> 
           </form>
         </section>
-      <script>
-      /* Google map
-      ------------------------------------------------*/
-      var map = '';
-      var center;
-
-      function initialize() {
-        var mapOptions = {
-          zoom: 16,
-          center: new google.maps.LatLng(13.758468,100.567481),
-          scrollwheel: false
-        };
-        
-        map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
-
-        google.maps.event.addDomListener(map, 'idle', function() {
-          calculateCenter();
-        });
-        
-        google.maps.event.addDomListener(window, 'resize', function() {
-          map.setCenter(center);
-        });
-      }
-
-      function calculateCenter() {
-        center = map.getCenter();
-      }
-
-      function loadGoogleMap(){
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-        document.body.appendChild(script);
-      }
-      $(document).ready(function(){                
-        loadGoogleMap();                
-      });
-      </script>
 @endsection
 
 @section('footer')
@@ -113,8 +73,8 @@
             <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
               <h3 class="tm-footer-div-title">Main Menu</h3>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="http://127.0.0.1:8000/Home">Home</a></li>
+                <li><a href="http://127.0.0.1:8000/Profile">Profile</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Our Services</a></li>
@@ -122,24 +82,24 @@
             </nav>
             <div class="col-lg-5 col-md-5 tm-footer-div">
               <h3 class="tm-footer-div-title">About Us</h3>
-              <p class="margin-top-15">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
-              <p class="margin-top-15">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+              <p class="margin-top-15">We provide a wide variety of halal food and drinks, plus a strategic location that will make you feel at home for long in our cafe.</p>
+              <p class="margin-top-15">Come on, visit our cafe house.. Guaranteed you will be addicted to the menu in our cafe..</p>
             </div>
             <div class="col-lg-4 col-md-4 tm-footer-div">
               <h3 class="tm-footer-div-title">Get Social</h3>
-              <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.</p>
+              <p>Follow our social media accounts, to find out the latest info about Cafe House !!</p>
               <div class="tm-social-icons-container">
                 <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
-                <a href="#" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+                <a href="https://twitter.com/candraapridita" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/candra-apridita-putri-986a3a1b6" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCUA9F52wYjpokjz1-M8M93w" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
                 <a href="#" class="tm-social-icon"><i class="fa fa-behance"></i></a>
               </div>
             </div>
           </div>              
       <div class="container">
           <div class="row tm-copyright">
-           <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2084 Your Cafe House</p>
+           <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2021 Owner Cafe House-Candra Apridita Putri</p>
          </div>  
       </div>
 @endsection
